@@ -177,7 +177,7 @@ def extract_fundamentals(fast: Dict[str, Any]) -> Dict[str, Any]:
 def build_agent() -> AssistantAgent:
     if st.session_state.model_client is None:
         st.session_state.model_client = OpenAIChatCompletionClient(
-            model="deepseek/deepseek-r1-0528:free",
+            model="deepseek/deepseek-chat",
             base_url="https://openrouter.ai/api/v1",
             api_key=OPENAI_API_KEY,
             model_info={
